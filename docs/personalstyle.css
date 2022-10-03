@@ -1,0 +1,34 @@
+body {
+  background-color: #f7ede2;
+  color: black;
+  font-family: garamond;
+}
+
+h1 {
+  color: #84a59d;
+  text-align: center;
+}
+
+p {
+  font-family: garamond;
+  font-size: 20px;
+}
+/* unvisited link */
+a:link {
+  color: #f28482;
+}
+
+/* visited link */
+a:visited {
+  color: #f28482;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f28482;
+}
+
+/* selected link */
+a:active {
+  color: #f28482;
+}
