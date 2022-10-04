@@ -3,12 +3,16 @@ body {
   color: black;
   font-family: garamond;
 }
-
 h1 {
   color: #84a59d;
   text-align: center;
+  font-size: 40px
 }
-
+h2 {
+  color: #84a59d;
+  text-align: left;
+  font-size: 36px
+}
 p {
   font-family: garamond;
   font-size: 20px;
@@ -17,35 +21,37 @@ p {
 a:link {
   color: #f28482;
 }
-
 /* visited link */
 a:visited {
   color: #f28482;
 }
-
 /* mouse over link */
 a:hover {
   color: #f28482;
 }
-
 /* selected link */
 a:active {
   color: #f28482;
 }
-ul {
+nav {display: block}
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #f7ede2;
 }
-li {
+nav li {
   float: left;
 }
-li a {
+nav li a {
   display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+nav li a:hover {
+  background-color: #84a59d;
+}
+img.photo {max-width:300px; width:80%}
