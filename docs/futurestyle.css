@@ -9,11 +9,14 @@ body {
 }
 
 .mainheader {
-  background-color: #0304be;
+  overflow: hidden;
+  background-color: #1b1c1c;
   color: white;
+  border-style: hidden;
 }
 
 .mainheader h1 {
+  overflow: hidden;
   background-color: #0304be;
   position: relative;
   top: 20px;
