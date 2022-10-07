@@ -9,9 +9,9 @@ body {
 }
 
 .mainheader {
-  overflow: hidden;
-  background-color: #1b1c1c;
+  width: 100%;
   color: white;
+  background-color: #1b1c1c;
   border-style: hidden;
 }
 
@@ -49,7 +49,6 @@ padding: 30px 30px;
 color: black;
 text-align: center;
 position: relative;
-left: 50px;
 top: 10px;
 }
 
@@ -62,6 +61,7 @@ color: #4d9b07;
 }
 
 .fakenav {
+  overflow: hidden;
   background-color: #0304be;
   position: relative;
   top: 20px;
@@ -73,6 +73,46 @@ color: #4d9b07;
   color: white;
   padding: 0px 8px;
 }
+
+.socialnav {
+overflow: hidden;
+background: #d4d0ca;
+position: relative;
+bottom: 20px;
+width: 100%;
+border-style: solid;
+border-left-width: 5px;
+border-right-width: 5px;
+border-color: #d4d0ca;
+font-size: 13px;
+}
+
+.socialnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 8px 8px;
+  margin: 5px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: black;
+  border-right-color: black;
+  border-top-color: white;
+  border-left-color: white;
+  }
+  
+.socialnav a:hover {
+  background-color: #bdb9b4;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: black;
+  border-left-color: black;
+  }
 
 /* Style the top navigation bar */
 .topnav {
@@ -135,7 +175,7 @@ border-style: solid;
   background-color: #1b1c1c;
   padding-left: 20px;
 }
-.fakeimg {
+.img {
   padding: 20px 20px;
   max-width: 100%;
 }
@@ -150,6 +190,17 @@ border-style: solid;
   border-top-style: hidden;
   color: white;
 }
+
+.card2 {
+  background-color: #d4d0ca;
+  padding: 20px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #d4d0ca;
+  border-width: 5px;
+  border-top-style: hidden;
+  color: black;
+  }
 
 /* Clear floats after the columns */
 .row:after {
