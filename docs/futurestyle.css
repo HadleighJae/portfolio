@@ -60,9 +60,128 @@ padding: 0px 00px;
 color: #4d9b07;
 }
 
+
+/* Style the top navigation bar */
+.topnav {
+  background: #d4d0ca;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  border-style: solid;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-color: #d4d0ca;
+  font-size: 13px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 8px 8px;
+  margin: 5px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: black;
+  border-right-color: black;
+  border-top-color: white;
+  border-left-color: white;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #bdb9b4;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: black;
+  border-left-color: black;
+}
+a.active {
+background-color: #bdb9b4;
+color: black;
+border-style: solid;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: black;
+  border-left-color: black;
+}
+
+
+.dropbtn {
+  background-color: #d4d0ca;
+  color: black;
+  padding: 8px 8px;
+  margin: 5px;
+  font-size: 13px;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: black;
+  border-right-color: black;
+  border-top-color: white;
+  border-left-color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: 35px;
+  left: 5px;
+  background-color: #d4d0ca;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 2px 2px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-align: left;
+  padding: 8px;
+  margin: 0px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  border: none;
+}
+
+.dropdown-content a:hover {
+background-color: #0304be;
+border: none;
+color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #bdb9b4;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: black;
+  border-left-color: black;
+}
+
 .fakenav {
-  overflow: hidden;
   background-color: #0304be;
+  display: block;
   position: relative;
   top: 20px;
   width: 100%;
@@ -114,57 +233,6 @@ font-size: 13px;
   border-left-color: black;
   }
 
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background: #d4d0ca;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  border-style: solid;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-color: #d4d0ca;
-  font-size: 13px;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 8px 8px;
-  margin: 5px;
-  text-decoration: none;
-  border-style: solid;
-  border-width: 1px;
-  border-bottom-color: black;
-  border-right-color: black;
-  border-top-color: white;
-  border-left-color: white;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #bdb9b4;
-  color: black;
-  border-style: solid;
-  border-width: 1px;
-  border-bottom-color: white;
-  border-right-color: white;
-  border-top-color: black;
-  border-left-color: black;
-}
-a.active {
-background-color: #bdb9b4;
-color: black;
-border-style: solid;
-  border-bottom-color: white;
-  border-right-color: white;
-  border-top-color: black;
-  border-left-color: black;
-}
 .leftcolumn {   
   float: left;
   width: 75%;
