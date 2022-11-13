@@ -39,7 +39,13 @@ h3 {
   font-size: 18px;
 }
 
+h4 {
+  margin-bottom: 1px;
+  font-size: 15px;
+}
+
 h5 {
+  margin-top: 1px;
   font-size: 10px;
 }
 
@@ -245,6 +251,14 @@ font-size: 13px;
 .card img {
   height: 100%;
   width: 100%;
+}
+
+.card a {
+  color: white;
+}
+
+.card a:hover {
+  color: #03be5f;
 }
 
 .card2 {
