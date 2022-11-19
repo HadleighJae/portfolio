@@ -74,14 +74,10 @@ top: 10px;
   position: sticky;
   top: 0px;
   width: 100%;
-  border-style: solid;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-color: #d4d0ca;
   font-size: 13px;
 }
 
-.topnav a {
+.topnav a, .dropbtn {
   float: left;
   display: block;
   color: black;
@@ -97,7 +93,7 @@ top: 10px;
   border-left-color: white;
 }
 
-.topnav a:hover {
+.topnav a:hover, .dropdown:hover .droptbn {
   background-color: #bdb9b4;
   color: black;
   border-style: solid;
@@ -118,20 +114,6 @@ border-style: solid;
   border-left-color: black;
 }
 
-.dropbtn {
-  background-color: #d4d0ca;
-  color: black;
-  padding: 8px 8px;
-  margin: 5px;
-  font-size: 13px;
-  border-style: solid;
-  border-width: 1px;
-  border-bottom-color: black;
-  border-right-color: black;
-  border-top-color: white;
-  border-left-color: white;
-  cursor: pointer;
-}
 
 .dropdown {
   position: relative;
@@ -171,17 +153,6 @@ color: white;
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #bdb9b4;
-  color: black;
-  border-style: solid;
-  border-width: 1px;
-  border-bottom-color: white;
-  border-right-color: white;
-  border-top-color: black;
-  border-left-color: black;
 }
 
 .socialnav {
