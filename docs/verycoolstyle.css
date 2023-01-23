@@ -89,6 +89,7 @@ footer .row:after {
 
 .grid-container {
   background-color: #303030;
+  color: white;
   display: grid;
   gap: 0px;
   padding: 10px;
@@ -151,82 +152,7 @@ footer .row:after {
   color: white;
 }
 
-.collagelink-resume a:link {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/lizziePose.jpg?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 20%;
-  filter: blur(1px);
-  opacity: 0.6;
-  border: 5px;
-  border-style: solid;
-  border-color: #303030;
-  color: white;
-  padding: 60px 62px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-resume a:hover {
-  opacity: 1;
-  filter: blur(0px);
-  padding: 65px 67px;
-  border: 0px;
-}
-
-.collagelink-github a:link {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/bookcovercropped.JPG?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 52%;
-  opacity: 0.6;
-  filter: blur(1px);
-  border: 5px;
-  border-style: solid;
-  border-color: #303030;
-  color: white;
-  padding: 60px 62px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-github a:hover {
-  opacity: 1;
-  filter: blur(0px);
-  padding: 65px 67px;
-  border: 0px;
-}
-
-.collagelink-assignments a:link {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/shroomtable.JPG?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60% 65%;
-  opacity: 0.6;
-  filter: blur(1px);
-  border: 5px;
-  border-style: solid;
-  border-color: #303030;
-  color: white;
-  padding: 139px 80px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-assignments a:hover {
-  opacity: 1;
-  filter: blur(0px);
-  padding: 144px 85px;
-  border: 0px;
-}
-
-.collagelink-about a:link {
+.collagelink-about a {
   background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/whiteDressCrystalFar.JPG?raw=true');
   background-repeat: no-repeat;
   background-position: 50% 46%;
@@ -251,7 +177,82 @@ footer .row:after {
   border: 0px;
 }
 
-.collagelink-gallery a:link {
+.collagelink-assignments a {
+  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/shroomtable.JPG?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 65%;
+  opacity: 0.6;
+  filter: blur(1px);
+  border: 5px;
+  border-style: solid;
+  border-color: #303030;
+  color: white;
+  padding: 139px 80px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.collagelink-assignments a:hover {
+  opacity: 1;
+  filter: blur(0px);
+  padding: 144px 85px;
+  border: 0px;
+}
+
+.collagelink-resume a {
+  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/lizziePose.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+  filter: blur(1px);
+  opacity: 0.6;
+  border: 5px;
+  border-style: solid;
+  border-color: rgba(48, 48, 48, 1);
+  color: white;
+  padding: 60px 62px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.collagelink-resume a:hover {
+  opacity: 1;
+  filter: blur(0px);
+  padding: 65px 67px;
+  border: 0px;
+}
+
+.collagelink-github a {
+  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/bookcovercropped.JPG?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 52%;
+  opacity: 0.6;
+  filter: blur(1px);
+  border: 5px;
+  border-style: solid;
+  border-color: #303030;
+  color: white;
+  padding: 60px 62px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.collagelink-github a:hover {
+  opacity: 1;
+  filter: blur(0px);
+  padding: 65px 67px;
+  border: 0px;
+}
+
+.collagelink-gallery a {
   background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/jpromgroupspook.JPG?raw=true');
   background-repeat: no-repeat;
   background-size: cover;
