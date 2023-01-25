@@ -161,13 +161,17 @@ body-row:after {
 }
 
 .title {
+  display: flex;
   padding: 20px;
   border: 15px;
   font-size: 30px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   border-style: solid; 
   border-color: #303030;
   color: white;
+  height: 500px;
 }
 
 .collagelink-about a {
