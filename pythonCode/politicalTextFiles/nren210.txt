@@ -513,7 +513,7 @@ Grand Challenges 1993: High Performance Computing and
 Communications. The "Teal Book" (because of its color) "provides a
 far-sighted vision for investment in technology but also recognizes
 the importance of human resources  and applications that serve
-major national needs. This É investment will bring both economic
+major national needs. This   investment will bring both economic
 and social dividends, including advances in education,
 productivity, basic science, and technological innovation."
 Requests for copies of this 68-page document should go to: Federal

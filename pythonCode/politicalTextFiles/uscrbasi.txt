@@ -292,7 +292,7 @@ Form of Notice for Visually Perceptible Copies
 The notice for visually perceptible copies should contain all of 
 the following three elements:
 
-1.  The symbol © (the letter C in a circle), or the word 
+1.  The symbol   (the letter C in a circle), or the word 
 "Copyright," or the abbreviation "Copr."; and
 
 2.  The year of first publication of the work.  In the case of 
@@ -308,7 +308,7 @@ useful article; and
 abbreviation by which the name can be recognized, or a 
 generally known alternative designation of the owner.
 
-	Example: (c© 1991 John Doe
+	Example: (c  1991 John Doe
 
 The "C in a circle" notice is used only on "visually perceptible 
 copies." Certain kinds of works -- for example, musical, dramatic, and 

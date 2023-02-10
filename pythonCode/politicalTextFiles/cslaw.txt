@@ -52,7 +52,8 @@ technical ideas about the flow of information in automated
 information systems.  
 
      B.   Basic Concepts 
-Š     There is a broad, top-level consensus regarding the meaning
+
+      There is a broad, top-level consensus regarding the meaning
 of most technical computer security concepts.  This is partly
 because of government involvement in proposing, coordinating, and
 publishing the definitions of basic terms [2].  The meanings of
@@ -106,7 +107,8 @@ until recently been addressed by restricting access to AIS to
 trustworthy subjects. Today, the integrity threat is no longer
 tractable exclusively through access control.  The desire for
 wide connectivity through networks and the increased use of
-commercial-off-the-shelf software has limited the degree to whichŠmost AISs can trust its subjects.  Work in integrity has been
+commercial-off-the-shelf software has limited the degree to which
+ most AISs can trust its subjects.  Work in integrity has been
 accelerating over the past few years, and will likely become as
 important a priority as confidentiality in the future.
 
@@ -160,7 +162,8 @@ for its enactment.  The legislative branch, consisting of the
 Congress and fifty state legislatures, produce the smallest
 amount of law which is worded in the most general terms.  For
 example, the Congress may pass a bill mandating that sensitive
-information in government computers must be protected.  TheŠexecutive branch, consisting of the Executive Office of the
+information in government computers must be protected.  The
+ executive branch, consisting of the Executive Office of the
 President and numerous agencies, issues regulations which
 implement the bills passed by legislatures.  Thus, the Department
 of Commerce may issue regulations which establish criteria for
@@ -214,7 +217,8 @@ tractable using technical computer security concepts.  For
 example, consider the following matrix:
 
 
-                     Confidentiality    Integrity    AvailabilityŠ
+                     Confidentiality    Integrity    Availability
+ 
 Sabotage                                    X             X
 
 Theft of Services                                         X
@@ -268,7 +272,8 @@ Computer Use," Prentice Hall, 1986, pg. 129.
 Security Terms," 21 October 1988.
 
 [3]  Thomas R. Mylott III, "Computer Law for the Computer
-Professional," Prentice Hall, 1984, pg. 131.Š
+Professional," Prentice Hall, 1984, pg. 131.
+ 
 [4]  Gasser, Morrie, "Building a Secure Computer System," Van
 Nostrand, 1988.
 

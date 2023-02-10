@@ -1577,29 +1577,29 @@ III.  Sabotage/Espionage/Harassment Techniques
     is a more original, less standardized code.  The first example of
     this would be a Freemason type code.
 
-    A ³ B ³ C     \ J  /       N ³ O ³ P      \ W  /
-    ÄÄÅÄÄÄÅÄÄ      \  /        ù ³ ù ³ ù       \ù /
-    D ³ E ³ F       \/        ÄÄÄÅÄÄÄÅÄÄÄ       \/
-    ÄÄÅÄÄÄÅÄÄ    K  /\  L      Q ³ R ³ S     Xù /\ ùY
-    G ³ H ³ I      /  \        ù ³ ù ³ ù       /ù \
-                  / M  \      ÄÄÄÅÄÄÄÅÄÄÄ     / Z  \
-                               T ³ U ³ V
-                               ù ³ ù ³ ù
+    A   B   C     \ J  /       N   O   P      \ W  /
+                   \  /                        \  /
+    D   E   F       \/                          \/
+                 K  /\  L      Q   R   S     X  /\  Y
+    G   H   I      /  \                        /  \
+                  / M  \                      / Z  \
+                               T   U   V
+                                        
 
 
     For that same message, "Minuteman was here", you would write:
 
-      /\    ÚÄÄÄ    ³  ÚÄÄÄ¿  ÄÄÄ¿  ÚÄÄÄ¿    /\       ³     ³
-     /  \   ³     ù ³  ³ ù ³   ù ³  ³   ³   /  \      ³   ù ³
-    /    \  ³    ÄÄÄÙ  ³   ³     ³  ÀÄÄÄÙ  /    \  ÄÄÄÙ  ÄÄÄÙ
+      /\                  Ä¿    Ä¿     Ä¿    /\              
+     /  \                                   /  \             
+    /    \                                 /    \            
 
-    \    /     ³  ÚÄÄÄ
-     \ù /      ³  ³ ù
-      \/    ÄÄÄÙ  ÀÄÄÄ
+    \    /            
+     \  /            
+      \/              
 
-    ÚÄÄÄ¿   ÚÄÄÄ¿  ÚÄÄÄ¿  ÚÄÄÄ¿
-    ³   ³   ³   ³  ³ ù ³  ³   ³
-    ³   ³   ÀÄÄÄÙ  ÀÄÄÄÙ  ÀÄÄÄÙ
+       Ä¿      Ä¿     Ä¿     Ä¿
+                               
+                               
 
 
     However, the most effective cipher by far is a cipher that uses a
@@ -1780,12 +1780,12 @@ IV. The Tools and Tactics of the Militants
         were taking it apart).  Ensure there are no exposed wires touching 
         each other. The finished hobby box should look like this:
 
-                   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-                   ³               ³
-              <====³    ÜÜ         ³
-              <====³               ³             <==== - nails
-                   ³               ³             ÚÄÄÄ¿ - hobby box
-                   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                ÜÜ - switch
+                                  Ä¿
+                                    
+              <====                 
+              <====                              <==== - nails
+                                                    Ä¿ - hobby box
+                                                       - switch
 
     5.) Screw on the base plate and you're ready.
 
@@ -2287,9 +2287,9 @@ IV. The Tools and Tactics of the Militants
     1.) Place the beaker in the ice bath, and carefully pour 550 ml of 
     concentrated nitric acid into the beaker.
     
-    2.) When the acid has cooled to below 20ø, add small amounts of the
+    2.) When the acid has cooled to below 20 , add small amounts of the
     crushed fuel tablets to the beaker.  The temperature will rise, and it 
-    must be kept below 30ø, or dire consequences could result.  Stir the 
+    must be kept below 30 , or dire consequences could result.  Stir the 
     mixture.
     
     3.) Drop the temperature below zero degrees celsius, either by adding

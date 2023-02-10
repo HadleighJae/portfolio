@@ -4,7 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27ebfbb0-185f-476b-8ec8-3c96924ea296" name="Changes" comment="committing nlp2 via pycharm (please work)" />
+    <list default="true" id="27ebfbb0-185f-476b-8ec8-3c96924ea296" name="Changes" comment="committing nlp2 via pycharm (please work)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatGPTGeneratedCode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hopefullyThisWorks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/politicalScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/0815gulf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/0815gulf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/1983.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/1983.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/1st_than.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/1st_than.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/993frmn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/adlchek.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/adlchek.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/alembic1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/alembic1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/amendmen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/amendmen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/annapoli.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/annapoli.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/bkrsfld.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/bkrsfld.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/century.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/century.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/charlott.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/charlott.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/continen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/continen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/cslaw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/cslaw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/d6mrd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/d6mrd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/deadanim.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/deadanim.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/declarat.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/declarat.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/digiphon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/digiphon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/earthist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/earthist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/emancipa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/emancipa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/ess-wrig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/ess-wrig.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/euthnsia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/euthnsia.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/feder15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/feder15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/foiasmal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/foiasmal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/fr9401.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/fr9401.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/fundamen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/fundamen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/german_s.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/german_s.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/ita_bc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/ita_bc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/jeff3_13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/jeff3_13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/jefferso.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/jefferso.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/magna_ca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/magna_ca.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/monroe_d.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/monroe_d.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/nren210.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/nren210.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/pguide.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/pguide.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/proclama.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/proclama.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/rebuttal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/rebuttal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/revsexsm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/revsexsm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/rights_o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/rights_o.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/six.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/six.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/spyplane.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/spyplane.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/transmit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/transmit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/treaty_o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/treaty_o.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/usconsti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/usconsti.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/uscrbasi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/uscrbasi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/politicalTextFiles/voynich.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/voynich.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readingFileCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/readingFileCollection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topicModel_Visualization.html" beforeDir="false" afterPath="$PROJECT_DIR$/topicModel_Visualization.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topicModeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/topicModeling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +67,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -24,18 +79,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2L1exWb2mYsUtnvjVE4CbE1EMlB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/hadle/Documents/GitHub/portfolio/pythonCode/venv",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hadle/Documents/GitHub/portfolio/pythonCode/topicModeling.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hadle\Documents\GitHub\portfolio\pythonCode\venv" />
@@ -44,7 +104,7 @@
       <recent name="C:\Users\hadle\Documents\GitHub\portfolio\pythonCode" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.readingFileCollection">
+  <component name="RunManager" selected="Python.topicModeling">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="codeExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,11 +113,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="politicalTextWebScraper" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="codeExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\hadle\Documents\GitHub\portfolio\pythonCode\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (pythonCode)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/politicalTextWebScraper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -75,11 +157,55 @@
       </envs>
       <option name="SDK_HOME" value="C:\Users\hadle\Documents\GitHub\portfolio\pythonCode\venv\Scripts\python.exe" />
       <option name="SDK_NAME" value="Python 3.11 (pythonCode)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/readingFileCollection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/readingFileCollection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testWeb" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="codeExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\hadle\Documents\GitHub\portfolio\pythonCode\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (pythonCode)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testWeb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="topicModeling" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="codeExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\hadle\Documents\GitHub\portfolio\pythonCode\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (pythonCode)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topicModeling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,6 +217,9 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.readingFileCollection" />
+      <item itemvalue="Python.testWeb" />
+      <item itemvalue="Python.politicalTextWebScraper" />
+      <item itemvalue="Python.topicModeling" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -127,20 +256,10 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="trying to commit via pycharm" />
     <MESSAGE value="committing nlp2 via pycharm" />
     <MESSAGE value="committing nlp2 via pycharm (please work)" />
     <option name="LAST_COMMIT_MESSAGE" value="committing nlp2 via pycharm (please work)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/venv/main.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

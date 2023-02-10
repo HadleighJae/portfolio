@@ -261,7 +261,7 @@ Work, which in part required that:
      All    systems    enhancements,   modifications,    and
      development performed _pursuant to this contract_ shall
      be  incorporated within the systems which have  already
-     been  installed  in the U.S. Attorneys' Offices....  (¤
+     been  installed  in the U.S. Attorneys' Offices....  ( 
      3.2.4.2) (Emphasis added.)
      
      INSLAW  was  responding to this portion of the Statement  of
@@ -288,7 +288,7 @@ T. 1216-1219)
      In its Technical Proposal responding to DOJ's PROMIS Project
 RFP,  INSLAW  informed DOJ that it had made enhancements  to  Old
 PROMIS  which  were proprietary, and as to which it  had  made  a
-significant  developmental and commercial commitment.  (Answer  ¦
+significant  developmental and commercial commitment.  (Answer   
 13;  PX 12; Hamilton, T. 124-125; Gizzarelli, T. 482-483) In this
 regard, INSLAW specifically made a claim of proprietary rights in
 such enhancements. (Hamilton, T. 124)
@@ -3346,11 +3346,11 @@ business relationship with Earl Brian may not, however, have  the
 most reliable memory. Moreover, if Tessler was acting secretly on
 behalf  of  Earl Brian when he sought the voting  rights  of  the
 Hamiltons'  controlling interest in INSLAW, he may have  violated
-the  Federal  Banking Criminal Statute, 18 U.S.C. ¤  215  because
+the  Federal  Banking Criminal Statute, 18 U.S.C.    215  because
 Tessler  was  then  an  officer of a  Small  Business  Investment
 Company (SBIC). 53rd Street Ventures, as an SBIC, is a "financial
 institution"  as  defined in section 103 of  the  Small  Business
-Investment Act of 1958. Section (2) of 18 U.S.C. ¤ 215 makes it a
+Investment Act of 1958. Section (2) of 18 U.S.C.   215 makes it a
 federal crime for anyone who
      
      "as  an  officer, director, employee, agent or attorney
@@ -3363,7 +3363,7 @@ federal crime for anyone who
      
      It  may  be  unrealistic to expect Tessler to admit  to  Bua
 conduct  that could arguably expose Tessler to prosecution  under
-18 U.S.C. ¤ 215.
+18 U.S.C.   215.
      
                     (3)  Bua's Investigation of Hamilton's Claims
                          About Jonathan Ben Cnaan of 53rd Street

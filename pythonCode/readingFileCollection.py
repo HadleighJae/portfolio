@@ -1,43 +1,22 @@
-# Our challenge: read in multiple text files from a directory:
-# Our resource: The Python os module + a handy code example:
-#  https://www.geeksforgeeks.org/how-to-read-multiple-text-files-from-folder-in-python/
+# Read in multiple text files from a directory:
+
 import spacy
 # nlp = spacy.cli.download("en_core_web_md")
 nlp = spacy.load('en_core_web_md')
-# AFTER THE FIRST DOWNLOAD, COMMENT OUT the spacy.cli.download(...) variable.
-# Your spaCy language model will already be stored in your Python environment.
-# ABOUT WHAT SPACY SHOULD LOAD: Some tutorials direct us to en_core_web_md
-# There are _sm, _md, and _lg models built into spaCy. Each takes up more space than the others, but
-# contains more data so may be more accurate/precise.
-# If we try the sm model, we're told that it does not have word vectors loaded, so it uses tagger, parser and NER (named
-# entity recognition to calculate similarity instead. Better to switch to the md model--but worth comparing results!
 
 import os
 
-##############################
 # OBJECTIVE: Find out which words in my document are most similar to a particular word of interest
-# How to find this using spaCy similarity vectors?
 
-# Helpful resource for spaCy similarity calculation based on a selected word:
-# https://stackoverflow.com/questions/55921104/spacy-similarity-warning-evaluating-doc-similarity-based-on-empty-vectors
-##############################
-
-# ebb: The os module comes with python so you probably don't have to install it.
-# Just add the import line
-
-# commenting out in Pycharm: find keystroke under Code >> Comment with linecomment
-
-# ebb: Identify a file directory with text files to explore:
-# ebb: os.cwd returns the current working directory path
-
+# os.cwd returns the current working directory (pythonCode) path
 workingDir = os.getcwd()
-# print("textFiles" + workingDir)
+print("Current Working Directory: " + workingDir)
 
 # os.listdir lists files and folders inside a path:
 insideDir = os.listdir(workingDir)
-# print("venv" + str(insideDir))
+print("Files Inside Directory: " + str(insideDir))
 
-# use os.path.join to connect the subdirectory to the working directory:
+# use os.path.join to connect the subdirectory (textFiles) to the working directory (pythonCode):
 CollPath = os.path.join(workingDir, 'textFiles')
 # print(CollPath)
 
@@ -48,46 +27,34 @@ def readTextFiles(filepath):
         stringFile = str(readFile)
         lengthFile = len(readFile)
         # print(lengthFile)
-# ebb: add that utf8 encoding argument to the open() function to ensure that reading works on everyone's systems
-# this all succeeds if you see the text of your files printed in the console.
+# Add that utf8 encoding argument to the open() function to ensure that reading works on everyone's systems
         tokens = nlp(stringFile)
         # playing with vectors here
         vectors = tokens.vector
 
+        # IMPORTANT: This is where you add the Word of Interest
         wordOfInterest = nlp(u'shame')
         # print(wordOfInterest, ': ', wordOfInterest.vector_norm)
 
-        # Now, let's open an empty dictionary! We'll fill it up with the for loop just after it.
-        # The for-loop goes over each token and gets its values
         highSimilarityDict = {}
         for token in tokens:
             if(token and token.vector_norm):
-                # if token not in highSimilarityDict.keys(): # Alas, this did not work to remove duplicates from my dictionary. :-(
                 # if wordOfInterest.similarity(token) > .3:
+                # The line above makes the dictionary smaller
                     highSimilarityDict[token] = wordOfInterest.similarity(token)
                     # The line above creates the structure for each entry in my dictionary.
-                        # print(token.text, "about this much similar to", wordOfInterest, ": ", wordOfInterest.similarity(token))
         # print(highSimilarityDict)
 
-        # ebb: When I printed the highSimilarityDict, I noticed that there are duplicate entries.
-        # I tried a couple of strategies to remove them. One is commented-out above.
-        # The strategy below actually worked, and I based it on this example:
-        # https://tutorial.eyehunts.com/python/python-remove-duplicates-from-dictionary-example-code/
+        # This code makes it so words don't repeat:
         highSimilarityReduced = {}
         for key, value in highSimilarityDict.items():
             if value not in highSimilarityReduced.values():
                 highSimilarityReduced[key] = value
+                    # print(token.text, "about this much similar to", wordOfInterest, ": ", wordOfInterest.similarity(token))
         # print(highSimilarityReduced)
         # print(len(highSimilarityReduced.items()), " vs ", len(highSimilarityDict.items()))
 
-        # ebb: For this next part, it's YOUR TURN to write some modifying code.
         # We should sort the highSimilarityReduced dictionary by values from high to low,
-        # but sorting is a little tricky because we need to isolate the **value**
-        # not the key.
-        # HOW TO DO IT? SEE https://www.freecodecamp.org/news/sort-dictionary-by-value-in-python/
-        # NOTE: After you sort, your results won't be a dictionary any more!
-        # So you should read the WHOLE tutorial to see how to convert this back into a dictionary again
-        # and do that in your code here.
 
         SortedWordValues = sorted(highSimilarityReduced.items(), key=lambda x: x[1])
         # print(SortedWordValues)
@@ -103,7 +70,8 @@ def readTextFiles(filepath):
         SortedWordValuesReversedDict = dict(SortedWordValuesReversed)
         print(SortedWordValuesReversedDict)
 
-# ebb: This controls our file handling as a for loop over the directory:
+# This controls our file handling as a for loop over the directory:
+# Aka putting the CollPath over the dictionaries AND calling the tokens:
 for file in os.listdir(CollPath):
     if file.endswith(".txt"):
         filepath = f"{CollPath}/{file}"
