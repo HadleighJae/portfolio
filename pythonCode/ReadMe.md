@@ -10,7 +10,7 @@ Before starting in PyCharm, open your shell (this could be your GitBash, Command
 pip install BeautifulSoup4
 ```
 
-`BeautifulSoup4` is a Python library for pulling data out of HTML and XML files. This makes it possible to gather the data located on these file types.[^1]
+- `BeautifulSoup4` is a Python library for pulling data out of HTML and XML files. This makes it possible to gather the data located on these file types.[^1]
 
 Once that is downloaded, you may start editing a new **Python document** on PyCharm. 
 
@@ -22,9 +22,9 @@ import requests
 import os
 ```
 
-`import bs4` puts BeautifulSoup4 into your Python Document
-`import requests` returns a Response Object with all the response data (content, encoding, status, etc) [^2]
-`import os` allows access to your local directories
+- `import bs4` puts BeautifulSoup4 into your Python Document
+- `import requests` returns a Response Object with all the response data (content, encoding, status, etc) [^2]
+- `import os` allows access to your local directories
 
 Next, define `archive_url` by inserting the link you would like to scrape. For this, I used the textfiles website to gather multiple political text files.
 
@@ -73,10 +73,6 @@ You will notice multiple href links provided, but we only want the text files. T
 This gathers the html code only associated with the **TD** tags with **ALIGN=TOP** inside of it. This then eliminates the href links we do not need:
 
 ```html
-~~<tab indent=60 id=T><br>~~
-~~<TR VALIGN=TOP><TD VALIGN=TOP><B><A HREF="INGERSOLL">INGERSOLL</A></B><TAB TO=T><TD WIDTH=20></TD><TD><B>Files Written by or with Robert G. Ingersoll</B></TD></TR>~~
-~~<TR VALIGN=TOP><TD VALIGN=TOP><B><A HREF="SPUNK">SPUNK</A></B><TAB TO=T><TD WIDTH=20></TD><TD><B>The Myriad Files of the Spunk Press</B></TD></TR>~~
-~~<TR><TD>&nbsp;</TD></TR>~~
 <TR VALIGN=TOP><TD ALIGN=TOP><A HREF="0596af07.txt">0596af07.txt</A>  <tab to=T><TD> 4161<BR><TD> Big Business is Promoting Socialism by F.R. Duplantier (May, 1996)
 <TR VALIGN=TOP><TD ALIGN=TOP><A HREF="0596af11.txt">0596af11.txt</A>  <tab to=T><TD> 4364<BR><TD> Change the Orientation of Welfare, by F.R. Duplantier (May, 1996)
 <TR VALIGN=TOP><TD ALIGN=TOP><A HREF="10batf">10batf</A>  <tab to=T><TD> 973<BR><TD> Top Ten Lessons Learned by the BATF in the Waco Raid
@@ -90,9 +86,9 @@ Next, we can gather all the links using this indented variable:
 This eliminates unnecessary tags, leaving us only with the **A** tags:
 
 ```html
-~~<TR VALIGN=TOP><TD ALIGN=TOP>~~ <A HREF="0596af07.txt">0596af07.txt</A>  ~~<tab to=T><TD> 4161<BR><TD> Big Business is Promoting Socialism by F.R. Duplantier (May, 1996)~~
-~~<TR VALIGN=TOP><TD ALIGN=TOP>~~ <A HREF="0596af11.txt">0596af11.txt</A>  ~~<tab to=T><TD> 4364<BR><TD> Change the Orientation of Welfare, by F.R. Duplantier (May, 1996)~~
-~~<TR VALIGN=TOP><TD ALIGN=TOP>~~ <A HREF="10batf">10batf</A>  ~~<tab to=T><TD> 973<BR><TD> Top Ten Lessons Learned by the BATF in the Waco Raid~~
+<A HREF="0596af07.txt">0596af07.txt</A>
+<A HREF="0596af11.txt">0596af11.txt</A>
+<A HREF="10batf">10batf</A>
 ```
 
 In order to download the files, we must be sure to add the href link to the website link. This way, Python has a way to find the files you'd like to download:
@@ -131,7 +127,7 @@ def download_links(href)
 
 This will help us with the downloading of the files and placing the files where we want.
 
-Instead of having all the files named *http://textfiles.com/politics/file_name*, we can change it to just be called *file_name* because this variable splits the url and gets only the last string:
+Instead of having all the files named `http://textfiles.com/politics/file_name`, we can change it to just be called `file_name` because this variable splits the url and gets only the last string:
 
 ```python
     file_name = href.split('/')[-1]
@@ -221,10 +217,10 @@ pip install nltk
 pip install ipython
 ```
 
-`gensim` is an open source natural language processing (NLP) library used for unsupervised topic modeling [^4]
-`pyldavis` helps us visualize the topics [^5]
-`nltk` provides Python programs to work with human language data [^6]
-`ipython` is an interactive shell to provide interactive and exploratory computing [^7]
+- `gensim` is an open source natural language processing (NLP) library used for unsupervised topic modeling [^4]
+- `pyldavis` helps us visualize the topics [^5]
+- `nltk` provides Python programs to work with human language data [^6]
+- `ipython` is an interactive shell to provide interactive and exploratory computing [^7]
 
 
 After starting a new Python document for Topic modeling, insert the following:
@@ -476,7 +472,7 @@ pyLDAvis.save_html(vis, 'topicModel_Visualization.html')
 
 You can view this [python topic modeling file here](https://github.com/HadleighJae/portfolio/blob/main/pythonCode/topicModeling.py).
 
-### pyLDAvis Visualization
+### Analysis of [pyLDAvis Visualization](http://localhost:63342/pythonCode/topicModel_Visualization.html#topic=9&lambda=0&term=)
 
 Below shows the **left panel** of my topic model. Each circle represents a topic while the circle size  represents the relative statistical weight of the topic. The distance between the topics represents the similarities between the documents. 
 
@@ -531,6 +527,8 @@ It seems as though **topic 9** does not have many similar words to the other doc
 </picture>
 
 After seeing the large amounts of numbers listed, it gave me the impression that this could be a data set, possibly similar to the census Americans take every 10 years. This also leads me to believe the documents near **topic 9** also contain many numbers, unlike **topic 2**.
+
+You can view this [Topic Model Visualization code here](https://github.com/HadleighJae/portfolio/blob/main/pythonCode/topicModel_Visualization.html)
 
 This is an interesting resource, but I am still confused by it. I don't like that I can't tell which document each word is from or if that's even what it analyzes. I feel like I need more explanation on the data visualization, but I enjoyed making all of this! 
 
