@@ -5,59 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27ebfbb0-185f-476b-8ec8-3c96924ea296" name="Changes" comment="committing nlp2 via pycharm (please work)">
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatGPTGeneratedCode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hopefullyThisWorks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/politicalScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/politicalScraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/0815gulf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/0815gulf.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/1983.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/1983.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/1st_than.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/1st_than.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/993frmn.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/adlchek.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/adlchek.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/alembic1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/alembic1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/amendmen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/amendmen.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/annapoli.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/annapoli.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/bkrsfld.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/bkrsfld.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/century.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/century.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/charlott.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/charlott.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/continen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/continen.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/cslaw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/cslaw.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/d6mrd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/d6mrd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/deadanim.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/deadanim.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/declarat.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/declarat.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/digiphon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/digiphon.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/earthist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/earthist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/emancipa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/emancipa.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/ess-wrig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/ess-wrig.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/euthnsia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/euthnsia.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/feder15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/feder15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/foiasmal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/foiasmal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/fr9401.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/fr9401.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/fundamen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/fundamen.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/german_s.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/german_s.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/ita_bc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/ita_bc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/jeff3_13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/jeff3_13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/jefferso.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/jefferso.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/magna_ca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/magna_ca.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/monroe_d.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/monroe_d.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/nren210.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/nren210.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/pguide.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/pguide.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/proclama.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/proclama.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/rebuttal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/rebuttal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/revsexsm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/revsexsm.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/rights_o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/rights_o.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/six.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/six.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/spyplane.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/spyplane.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/transmit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/transmit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/treaty_o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/treaty_o.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/usconsti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/usconsti.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/uscrbasi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/uscrbasi.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalTextFiles/voynich.txt" beforeDir="false" afterPath="$PROJECT_DIR$/politicalTextFiles/voynich.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readingFileCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/readingFileCollection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/topicModel_Visualization.html" beforeDir="false" afterPath="$PROJECT_DIR$/topicModel_Visualization.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/topicModeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/topicModeling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScraper.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,7 +1,7 @@
 # ####################################################
 # INTRODUCTION TO LDA TOPIC MODELING
-# ebb: This introductory Python script is designed to read a collection of 209 text files
-# each one holding a tale in the Grimm's Fairy Tales collection. We'll explore topic modeling
+# ebb: This introductory Python script is designed to read a collection of 457 text files
+# each one holding a political text. We'll explore topic modeling
 # the collection, to see if we can "distant read" topics based on clusters of frequently repeated words.
 #######################################################
 # PIP INSTALLS TO MAKE FOR NLTK LDA TOPIC MODELING
@@ -20,12 +20,13 @@ from gensim.models import LdaModel
 import pyLDAvis.gensim_models
 import os
 
+# After the first time you run this, you may comment this out:
 # nltk.download('stopwords')
 
 # ############ STOP WORDS AND PUNCTUATION CUSTOMIZED HERE ###################
 # First, we pull in the nltk library's standard stop word list for English.
 stop_words = stopwords.words('english')
-newStopWords = ["jr", "without", "many", "like", "would", "must", "1", "made", "0the"]
+newStopWords = ["jr", "without", "many", "like", "would", "must", "1", "made", "0the", "may", "us", "2", "said", "get", "could", "shall", "use", "great", "may", "one", "new", "also", "3", "4", "5", "even", "every", "iii"]
 stop_words.extend(newStopWords)
 print("UPDATED: " + f"{stop_words=}")
 # print(stop_words)
@@ -56,6 +57,7 @@ politicalTextPath = os.path.join(workingDir, 'politicalTextFiles')
 print(politicalTextPath)
 
 
+# big filtering function that removes punctuation and stop_words
 # cleaning documents:
 def clean_doc(doc):
     text = open(doc, encoding='utf8').read()
@@ -78,7 +80,7 @@ def clean_doc(doc):
     return final_words
 
 
-# ebb: This controls our file handling as a for loop over the directory:
+# ebb: This controls our file handling as a for loop over the directory (collects docs):
 allDocs = []
 for file in os.listdir(politicalTextPath):
     if file.endswith(".txt"):
@@ -89,12 +91,22 @@ for file in os.listdir(politicalTextPath):
 # print(allDocs)
 
 # PREPARING THE CORPUS FOR TOPIC MODELING ########################
+# says "for every doc, clean all the docs"
 cleaned_docs = [clean_doc(doc) for doc in allDocs]
 
+# if you're having trouble with encoding, these next lines locate buggy files (will be the last file listed):
+# first comment out last cleaned_docs, then uncomment this function:
+
+# cleaned_docs = []
+# for doc in allDocs:
+    # print("This doc is going to the cleaners: " + f"{doc=}")
+    # clean_doc(doc)
 id2word = corpora.Dictionary(cleaned_docs)
 
 # print(id2word[260])
+# assigns id values to each word:
 corpus = [id2word.doc2bow(cleaned_doc) for cleaned_doc in cleaned_docs]
+# corpus is the clean words
 # print(corpus)
 
 # Show the words and numbers in just the first document:
@@ -113,28 +125,30 @@ corpus = [id2word.doc2bow(cleaned_doc) for cleaned_doc in cleaned_docs]
 # your results. Find a number you think works well for showing topics in this corpus.
 #   * Also, I'd like you to experiment with adjusting the stop_words list (above) when you see a lot
 # of the same words repeating across topics.
-lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=20)
+# where the topic modeling happens
+lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=15)
 # Suggestion: Try 10 - 50 topics and vary in 5s
-topics = lda_model.get_document_topics(corpus)
-print(f"{len(topics)=}")
+documents = lda_model.get_document_topics(corpus)
+print(f"{len(documents)=}")
 # ebb: len(topics) appears to be the number of documents. There are
-# 209 documents in the Grimm collection.
-print(f"{topics[456]=}")
-# topics[208] represents the topics in document 209. Remember why?
+# 457 documents in the Political Text collection.
+# Stops at the last document's Bag Of Words
+# documents[456] represents the documents in document 457 because it counts from 0
+print(f"{documents[456]=}")
+# Prints: topics[456]=[(11, 0.065304734), (12, 0.21792202), (15, 0.71204776)]
 # Notice our format string: called "f-printing":
-# This comes out:
-# topics[208]=[(20, 0.11845379), (66, 0.015097282), (74, 0.118847124), (76, 0.31761664), (82, 0.42932528)]
 # Topics is a dictionary with the keys as the document numbers and values are the
 # list of topics for that document. The values are tuples: (Topic number, weight of topic).
 # HEY, don't we want to sort these by weight?
-sorted_topics = sorted(topics[456], key=lambda x: x[1], reverse=True)
+sorted_documents = sorted(documents[456], key=lambda x: x[1], reverse=True)
 # This says, sort the topics, and the sort key is x, and then you'll get the second member
-print(f"{sorted_topics=}")
+print(f"{sorted_documents=}")
+# Prints: sorted_topics=[(15, 0.7185962), (12, 0.19057396), (11, 0.08708332)]
 # ebb: Notice, every time we run this, we get a different random assortment of topics present in the document we chose.
 # Our returns here are a sign of the randomization built into LDA topic modeling!
 
 # ebb: So, let's see what's in a topic:
-for topic in topics[456][:10]:
+for topic in documents[456][:10]:
     # This asks for up to 10 topics in document 209. It'll be fine if 10 topic clusters aren't really available there.
     terms = lda_model.get_topic_terms(topic[0], 20)
     # topic[0] is not the same as topics. (topics are documents). topic is an actual topic.

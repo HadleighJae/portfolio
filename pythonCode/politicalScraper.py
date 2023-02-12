@@ -27,7 +27,7 @@ def get_files():
         href = archive_url + link['href']
         if href.endswith(".txt"):
             download_links(href)
-    print("All tales downloaded!")
+    print("All files downloaded!")
     # ebb: After class I realized the print line indicating
     # all files downloaded needed to go after THIS loop finished.
     # Do you see why it makes sense and works here?
