@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27ebfbb0-185f-476b-8ec8-3c96924ea296" name="Changes" comment="committing nlp2 via pycharm (please work)">
-      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicalScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/politicalScraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topicModel_Visualization.html" beforeDir="false" afterPath="$PROJECT_DIR$/topicModel_Visualization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topicModeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/topicModeling.py" afterDir="false" />
-    </list>
+    <list default="true" id="27ebfbb0-185f-476b-8ec8-3c96924ea296" name="Changes" comment="committing nlp2 via pycharm (please work)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
