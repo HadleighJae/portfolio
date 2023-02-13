@@ -470,7 +470,7 @@ vis = pyLDAvis.gensim_models.prepare(lda_model, corpus, id2word, mds="mmds", R=3
 pyLDAvis.save_html(vis, 'topicModel_Visualization.html')
 ```
 
-You can view this [python topic modeling file here](https://github.com/HadleighJae/portfolio/blob/main/pythonCode/topicModeling.py).
+You can view this [python topic modeling file here](file:///C:/Users/hadle/Documents/GitHub/portfolio/docs/topicModel_Visualization.html#topic=0&lambda=1&term=).
 
 ### Analysis of [pyLDAvis Visualization](http://localhost:63342/pythonCode/topicModel_Visualization.html#topic=9&lambda=0&term=)
 
