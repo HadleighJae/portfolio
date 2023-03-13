@@ -64,8 +64,9 @@ def clean_doc(doc):
     no_punct = ''
     # no_punct = ''.join([c for c in doc if c not in string.punctuation])
     for c in text:
-        if c not in string.punctuation:
+        if c not in string.punctuation and c not in string.digits:
             no_punct = no_punct + c
+
     # with list comprehension
 
     words = no_punct.lower().split()
@@ -126,7 +127,8 @@ corpus = [id2word.doc2bow(cleaned_doc) for cleaned_doc in cleaned_docs]
 #   * Also, I'd like you to experiment with adjusting the stop_words list (above) when you see a lot
 # of the same words repeating across topics.
 # where the topic modeling happens
-lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=15)
+num_topics = 15
+lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=num_topics)
 # Suggestion: Try 10 - 50 topics and vary in 5s
 documents = lda_model.get_document_topics(corpus)
 print(f"{len(documents)=}")
@@ -149,7 +151,7 @@ print(f"{sorted_documents=}")
 
 # ebb: So, let's see what's in a topic:
 for topic in documents[456][:10]:
-    # This asks for up to 10 topics in document 209. It'll be fine if 10 topic clusters aren't really available there.
+    # This asks for up to 10 topics in document 457. It'll be fine if 10 topic clusters aren't really available there.
     terms = lda_model.get_topic_terms(topic[0], 20)
     # topic[0] is not the same as topics. (topics are documents). topic is an actual topic.
     # topic[0] is probably the heaviest weighted "top" topic.

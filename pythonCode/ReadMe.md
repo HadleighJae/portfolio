@@ -386,10 +386,13 @@ To assign **id values** to each word, enter this:
 corpus = [id2word.doc2bow(cleaned_doc) for cleaned_doc in cleaned_docs]
 ```
 
-Now that we finally have our desired words from our text files, we can now get into topic modeling. To do this, enter this code and play around with the `num_topics` number. For now, I will just use 15 topics:
+Now that we finally have our desired words from our text files, we can now get into topic modeling. 
+
+Enter this code and play around with the `num_topics` number. For now, I will just use 15 topics:
 
 ```python
-lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=15)
+num_topics = 15
+lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=num_topics)
 ```
 
 Now we can gather the topics using the assigned id's of the words:
