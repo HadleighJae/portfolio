@@ -20,7 +20,8 @@ body {
 }
 
 /* Footer (Menu, GitHub, Copyright) */
-footer {
+
+.footer {
   max-width: 100%;
   background-color: #1f1f1f;
 	padding: 10px;
@@ -29,154 +30,148 @@ footer {
     z-index: 0;
 }
 
-footer h1 {
+.footer h1 {
 	font-size: 20px;
     color: white;
     text-align: center;
 }
 
-footer p {
+.footer p {
 	padding: 5px;
 	font-size: 12px;
     color: white;
     text-align: center;
 }
 
-footer ul {
+.footer ul {
   list-style-type: none;
 	padding: 5px;
     font-size: 12px;
 }
 
-footer a {
+.footer a {
 	text-decoration: none;
 	color: grey;
     font-size: 12px;
 }
 
-footer a:hover {
+.footer a:hover {
 	text-decoration: underline;
 }
 
-footer a img {
+.footer a img {
 	max-width: 50px;
 }
 
-footer .column {
+.footer-column {
   float: left;
   padding: 10px;
 }
 
-footer .column.side {
+.footer-column.side {
   width: 25%;
 }
 
-footer .column.middle {
+.footer-column.middle {
   width: 50%;
 }
 
-footer .row:after {
+.footer-row:after {
   content: "";
   display: table;
   clear: both;
 }
 
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+  .footer-column.side, .footer-column.middle {
     width: 100%;
   }
 }
 
-.body-left {
+/* Grid */
+
+.body-column {
   float: left;
+  padding: 10px;
+  height: 350px;
+}
+
+.body-column.left {
   width: 50%;
 }
 
-body-right {
+.body-column.right {
   width: 50%;
 }
 
-body-row:after {
+.body-row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-@media screen and (max-width: 906px) {
-  .body-left, .body-right {
-  width: 100%
+@media screen and (max-width: 900px) {
+  .body-column.left, .body-column.right {
+    width: 100%;
+    height: 100%;
   }
 }
 
 .grid-container {
-  background-color: #303030;
-  color: white;
-  display: grid;
-  gap: 0px;
-  padding: 10px;
-  justify-content: left;
-  height: 500px;
-  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
-.grid-item {
-  background-color: #303030;
+.grid-container > a {
+  text-decoration: none;
+  color: white;
+  padding: 33px 35px;
+  border: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #303030;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 30px;
-  text-shadow: -1px 1px 2px black,
+  font-size: 32px;
+  filter: blur(1px) grayscale(50%);
+  opacity: 0.6;
+    text-shadow: -1px 1px 2px black,
     1px 1px 2px black,
     1px -1px 2px black,
     -1px -1px 2px black;
-  font-weight: bold;
-  color: white;
-  display: grid;
-  align-items: center;
-  margin: 0px;
-  max-width: 600px;
+  transition: 0.5s;
 }
 
-.item1 {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.item2 {
-  grid-column: 3;
-  grid-row: 1 / span 2;
-}
-
-.item3 {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.item4 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.item5 {
-  grid-column: 1 / span 3;
-  grid-row: 3;
+.grid-container > a:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  padding: 35px 37px;
+  border: 0px;
 }
 
 .title {
   display: flex;
-  padding: 20px;
-  border: 15px;
-  font-size: 30px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  font-size: 35px;
+  padding: 3px;
+  margin: 5px;
+  height: 100%;
+  color: white;
   border-style: solid; 
   border-color: #303030;
-  color: white;
-  height: 500px;
+  justify-content: center;
+  align-items: center;
 }
 
 .title h1 {
   text-shadow: 0px 0px #303030;
   transition: 0.5s;
+  text-align: center;
 }
 
 .title h1:hover {
@@ -187,129 +182,4 @@ body-row:after {
     2px 2px 1px #762851,
     4px 4px 1px #d985fa,
     6px 6px 1px #4ab5f8;
-}
-
-.collagelink-about a {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/whiteDressCrystalFar.JPG?raw=true');
-  background-repeat: no-repeat;
-  background-position: 50% 46%;
-  background-size: cover;
-  opacity: 0.6;
-  filter: blur(1px) grayscale(50%);
-  border: 5px;
-  border-style: solid;
-  border-color: #303030;
-  color: white;
-  padding: 58px 155px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-about a:hover {
-  opacity: 1;
-  filter: blur(0px) grayscale(0%);
-  padding: 63px 160px;
-  border: 0px;
-}
-
-.collagelink-assignments a {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/shroomtable.JPG?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60% 65%;
-  opacity: 0.6;
-  filter: blur(1px) grayscale(50%);
-  border: 5px;
-  border-style: solid;
-  border-color: #303030;
-  color: white;
-  padding: 139px 20px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-assignments a:hover {
-  opacity: 1;
-  filter: blur(0px) grayscale(0%);
-  padding: 144px 25px;
-  border: 0px;
-}
-
-.collagelink-resume a {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/lizziePose.jpg?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 20%;
-  filter: blur(1px) grayscale(50%);
-  opacity: 0.6;
-  border: 5px;
-  border-style: solid;
-  border-color: rgba(48, 48, 48, 1);
-  color: white;
-  padding: 60px 36px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-resume a:hover {
-  opacity: 1;
-  filter: blur(0px) grayscale(0%);
-  padding: 65px 41px;
-  border: 0px;
-}
-
-.collagelink-github a {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/bookcovercropped.JPG?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 52%;
-  opacity: 0.6;
-  filter: blur(1px) grayscale(50%);
-  border: 5px;
-  border-style: solid;
-  border-color: #303030;
-  color: white;
-  padding: 60px 44px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-github a:hover {
-  opacity: 1;
-  filter: blur(0px) grayscale(0%);
-  padding: 65px 49px;
-  border: 0px;
-}
-
-.collagelink-gallery a {
-  background-image: url('https://github.com/HadleighJae/portfolio/blob/main/docs/images/jpromgroupspook.JPG?raw=true');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 56%;
-  opacity: 0.6;
-  filter: blur(1px) grayscale(50%);
-  border: 5px;
-  border-style: solid;
-  border-color: #303030;
-  color: white;
-  padding: 60px 270px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.collagelink-gallery a:hover {
-  opacity: 1;
-  filter: blur(0px) grayscale(0%);
-  padding: 65px 275px;
-  border: 0px;
 }
