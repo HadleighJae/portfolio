@@ -93,7 +93,7 @@ body {
 .body-column {
   float: left;
   padding: 10px;
-  height: 350px;
+  height: 400px;
 }
 
 .body-column.left {
@@ -121,7 +121,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 100%;
+  max-width: 1400px;
+  min-height: 400px;
   padding: 0px;
   margin: 0px;
 }
