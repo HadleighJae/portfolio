@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:element name="xml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="metadata"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="meta"/>
+          <xs:element ref="page"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="metadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="people"/>
+        <xs:element ref="places"/>
+        <xs:element ref="works"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="people">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="person"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="places">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="place"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="works">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="work"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="work">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="type"/>
+          <xs:element ref="metaTitle"/>
+          <xs:element ref="author"/>
+          <xs:element ref="date"/>
+          <xs:element ref="sourceCollection"/>
+          <xs:element ref="repository"/>
+          <xs:element ref="reproductionNumber"/>
+        </xs:sequence>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="type" type="xs:NCName"/>
+  <xs:element name="metaTitle" type="xs:string"/>
+  <xs:element name="author">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="person"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sourceCollection" type="xs:string"/>
+  <xs:element name="repository" type="xs:string"/>
+  <xs:element name="reproductionNumber" type="xs:NCName"/>
+  <xs:element name="page">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="person"/>
+        <xs:element ref="title"/>
+        <xs:element ref="footer"/>
+        <xs:element ref="poem"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footer">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="place"/>
+        <xs:element ref="when"/>
+        <xs:element ref="signature"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="signature">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="person"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poem">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="etc"/>
+        <xs:element ref="meta"/>
+        <xs:element ref="person"/>
+        <xs:element ref="ref"/>
+      </xs:choice>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ref">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="etc"/>
+      </xs:sequence>
+      <xs:attribute name="n" type="xs:NCName"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="person">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="aliasName"/>
+        <xs:element ref="firstName"/>
+        <xs:element ref="info"/>
+        <xs:element ref="lastName"/>
+        <xs:element ref="middleName"/>
+      </xs:choice>
+      <xs:attribute name="id" type="xs:NCName"/>
+      <xs:attribute name="type" type="xs:NCName"/>
+      <xs:attribute ref="xml:id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="aliasName" type="xs:string"/>
+  <xs:element name="firstName" type="xs:NCName"/>
+  <xs:element name="info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="birthYear"/>
+        <xs:element ref="deathYear"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="birthYear" type="xs:integer"/>
+  <xs:element name="deathYear" type="xs:integer"/>
+  <xs:element name="lastName" type="xs:NCName"/>
+  <xs:element name="middleName">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:NCName">
+          <xs:attribute name="num" type="xs:integer"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="place">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="city"/>
+        <xs:element ref="country"/>
+        <xs:element ref="name"/>
+        <xs:element ref="state"/>
+      </xs:choice>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city" type="xs:string"/>
+  <xs:element name="country" type="xs:string"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="state" type="xs:NCName"/>
+  <xs:element name="title">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="etc"/>
+        <xs:element ref="person"/>
+      </xs:choice>
+      <xs:attribute name="of" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="date">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="date"/>
+        <xs:element ref="when"/>
+        <xs:element ref="day"/>
+        <xs:element ref="month"/>
+        <xs:element ref="year"/>
+      </xs:choice>
+      <xs:attribute name="date" type="xs:date"/>
+      <xs:attribute name="day" type="xs:integer"/>
+      <xs:attribute name="from" type="xs:NCName"/>
+      <xs:attribute name="id" type="xs:NCName"/>
+      <xs:attribute name="month" type="xs:NCName"/>
+      <xs:attribute name="to" type="xs:NCName"/>
+      <xs:attribute name="year" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="day" type="xs:integer"/>
+  <xs:element name="month" type="xs:NCName"/>
+  <xs:element name="year" type="xs:integer"/>
+  <xs:element name="meta">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="person"/>
+        <xs:element ref="title"/>
+        <xs:element ref="when"/>
+        <xs:element ref="source"/>
+      </xs:choice>
+      <xs:attribute name="n" type="xs:NCName"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="source">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="citation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="citation">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="date"/>
+        <xs:element ref="place"/>
+        <xs:element ref="title"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="etc">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="person"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="when">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dare" type="xs:date"/>
+      <xs:attribute name="date" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
