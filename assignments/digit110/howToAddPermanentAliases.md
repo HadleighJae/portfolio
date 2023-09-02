@@ -42,7 +42,9 @@ alias aliasName='git command'
 ![../../../../../Downloads/bash_profile1.png](../../../../../Downloads/bash_profile1.png)
 
 1. Lastly, type in as many aliases as your heart desires! I just added the aliases at the bottom of the file and it worked just fine
-![../../../../../Downloads/bash_profile2.png](../../../../../Downloads/bash_profile2.png)
+![../../../../../Downloads/bash_profile4.png](../../../../../Downloads/bash_profile4.png)
+
+Now the aliases are permanently in your Git Bash! Here's an example of me using the aliases on my Git Bash Shell:
 
 ## Editing the etc Folder Permissions
 1. Right click the ***etc*** folder in ***Git*** and go to ***Properties***
