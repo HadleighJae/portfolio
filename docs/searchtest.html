@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search and Highlight</title>
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+#searchBox{
+    width: 100%;
+    padding: 15px;
+    background-color: blue;
+}
+
+#input{
+    width: 100%; 
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+
+#searchBtn{
+    width: 20%; 
+    height: 54px;
+}
+
+input {
+    font-size: 20px;
+}
+
+hgroup {
+	width: 100%;
+    color: black;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: justify;  
+}
+
+p {
+	padding: 0px 15px;
+}
+
+ul {
+	padding: 0px 40px;
+}
+
+.highlight
+{
+ color:blue;
+ text-decoration:underline;
+}
+
+hgroup {
+	padding: 15px;
+}
+
+</style>
+        <script>
+window.addEventListener( 'DOMContentLoaded',pageLoadUp,false);
+ var search=document.getElementById("content")
+
+function pageLoadUp() {
+    var input = document.getElementById("input")
+    input.addEventListener('keyup', searchMe, false)
+} 
+
+
+function searchMe() {
+/* alert('hey! this function fired!');  */
+let input = document.getElementById("input");
+let filter = input.value.toUpperCase();
+let searchAreas = document.getElementsByTagName("hgroup");
+for (var i = 0, length = searchAreas.length; i < length; i++) 
+{
+      if (searchAreas[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        searchAreas[i].style.display = "";
+      } else {
+        searchAreas[i].style.display = "none";
+      }
+    }
+}
+</script>
+    </head>
+    <body>
+        
+        
+        
+        
+        <div id="searchBox">
+            <input type="text" id="input" placeholder="Enter text to search..." />
+            <!--ebb: We don't really need this, since our JavaScript has an event listener triggered on keyup.
+               <input type="button" id="searchBtn" value="Search" />-->
+        </div>
+        
+        
+        <hgroup>
+            <h1>What is a claim?</h1>
+            
+            <p>A claim is a formal request made by you, the policyholder, to your insurance company for coverage or compensation for a loss or damage that is covered by your insurance policy. Here's a detailed breakdown of what a claim entails:</p>
+            <ul>
+                <li><b>Purpose of a Claim:</b> When an event occurs that results in a loss or damage—such as a car accident, property damage, or a health-related expense—you can file a claim to receive financial assistance from your insurance provider based on the terms of your policy.</li>
+                
+                <li><b>Claim Process:</b> To file a claim, you typically need to follow these steps:
+                    <ul>
+                        <li>Notify Your Insurer: Contact your insurance company as soon as possible after the incident occurs. This can often be done through a dedicated claims hotline, online portal, or your insurance agent.</li>
+                        <li>Provide Documentation: You'll need to submit relevant information and documentation, such as photos, police reports (if applicable), and any receipts or estimates for repairs or medical expenses.</li>
+                        <li>Claim Review: The insurance company will review your claim to determine if it is valid and assess the amount they will pay. This may involve an investigation or inspection, depending on the nature of the claim.</li>
+                        <li>Types of Claims: Claims can vary based on the type of insurance you have:
+                            
+                            <ul>
+                                <li><b>Auto Insurance:</b> Claims related to vehicle damage or accidents.</li>
+                                <li><b>Homeowners Insurance:</b> Claims for property damage, theft, or liability.</li>
+                                <li><b>Health Insurance:</b> Claims for medical expenses incurred during treatment.</li>
+                                <li><b>Payouts and Settlements:</b> Once the claim is approved, the insurance company will issue a payment or reimbursement based on the coverage outlined in your policy, minus any applicable deductibles.</li>
+                            </ul>
+                    </ul>
+                    
+                <li><b>Impact on Future Premiums:</b> It's worth noting that filing a claim can potentially impact your future premiums, as insurers may consider your claims history when calculating rates.</li>
+            </ul>
+            
+            <p>If you have further questions about how to file a claim or what to expect during the claims process, please don't hesitate to contact your insurance agent for assistance. They are here to help you navigate the process smoothly.</p>
+            
+            
+        </hgroup>
+        
+        <hgroup>
+            <h1>What is a deductible?</h1>
+            
+            <p>A deductible is the amount of money you are required to pay out-of-pocket for covered expenses before your insurance company begins to pay for the remaining costs. Here's how it works:</p>
+            <ul>
+                <li><b>Basic Definition:</b> When you file a claim, you will need to pay the deductible amount first. For example, if you have a deductible of $500 and you incur a covered expense of $2,000, you would pay the first $500, and your insurance would cover the remaining $1,500.</li>
+                
+                <li><b>Types of Deductibles:</b> Deductibles can vary by policy type. For instance, health insurance, auto insurance, and homeowners insurance may each have different deductible amounts and structures.</li>
+                
+                <li><b>Higher vs. Lower Deductibles:</b> Generally, choosing a higher deductible can result in lower premium costs, as you are taking on more risk by agreeing to pay more out-of-pocket in the event of a claim. Conversely, a lower deductible means higher premiums but less out-of-pocket expense if you need to file a claim.</li>
+                
+                <li><b>Annual vs. Per Claim:</b> Some deductibles apply on an annual basis (you pay it once each policy year), while others may apply to each claim you make (common in auto insurance).</li>
+                
+                <li><b>Impact on Claims:</b> Understanding your deductible is crucial, as it affects how much you will receive from your insurer after a claim and how much you'll need to pay out of pocket.</li></ul>
+            
+            <p>If you have more questions about how deductibles work or how they apply to your specific policy, feel free to reach out to your insurance agent for clarification.</p>
+            
+        </hgroup>
+        
+        
+        <hgroup>
+            <h1>What is a premium?</h1>
+            <p>A premium is the amount of money you pay for your insurance policy, typically on a regular basis (such as monthly, quarterly, or annually). Here are some key points to understand about premiums:</p>
+            
+            <ul>
+                <li><b>Cost of Coverage:</b> The premium is essentially the cost of the insurance coverage you receive. It ensures that your policy remains active and provides financial protection against specific risks, such as accidents, damages, or losses.</li>
+                
+                <li><b>Factors Affecting Premiums:</b> Several factors can influence the amount of your premium, including:
+                    
+                    <ul>
+                        <li>The type of insurance (e.g., auto, health, home).</li>
+                        <li>Your personal information (age, gender, location).</li>
+                        <li>Your claims history and credit score.</li>
+                        <li>The level of coverage and deductible you choose.</li>
+                        <li>Discounts for factors such as safe driving, bundling policies, or having security features in your home.</li>
+                        <li>Payment Frequency: Premiums can be paid in different ways: monthly, quarterly, semi-annually, or annually. Some people prefer to pay annually to avoid monthly payments, while others may choose a monthly plan for better cash flow.</li>
+                    </ul>
+                    
+                <li><b>Non-Payment Consequences:</b> If you fail to pay your premium on time, your policy may lapse, meaning you lose your coverage. This can also lead to higher premiums in the future if you have to reapply for insurance.</li>
+                
+                <li><b>Reviewing Your Premiums:</b> It's important to regularly review your premiums to ensure you are getting the best value for your coverage. Your agent can help you find potential discounts or adjust your coverage to fit your budget.</li>
+            </ul>
+            
+            <p>If you have any more questions about premiums or how they relate to your specific policy, please feel free to reach out to your insurance agent for assistance.</p>
+        </hgroup>
+        
+        <hgroup>
+            <h1>What is a quote?</h1>
+            <p>A quote is an estimate of the premium you would pay for an insurance policy based on the information you provide. It reflects the insurer's assessment of the risk involved in insuring you or your property. Here are some key points to understand about quotes:</p>
+            
+            <ul><li><b>Premium Estimate:</b> The quote gives you an idea of how much you can expect to pay for coverage. It takes into account various factors, such as your age, location, type of coverage, and claims history.</li>
+                
+                <li><b>Coverage Options:</b> A quote can include different coverage options and limits, allowing you to see how changes in coverage might affect your premium. This can help you make informed decisions about what level of protection you need.</li>
+                
+                <li><b>Conditional Offer:</b> It's important to note that a quote is not a guarantee of coverage. The final premium and terms may vary based on further assessment, underwriting processes, and any additional information required.</li>
+                
+                <li><b>Comparison Tool:</b> Quotes are useful for comparing different insurance providers and policies. By obtaining multiple quotes, you can evaluate coverage options and costs to find the best fit for your needs.</li>
+            </ul>
+            
+            <p>Overall, a quote serves as a valuable starting point in your insurance purchasing process, helping you understand potential costs and coverage available to you. If you have any questions about the quote or need assistance, feel free to contact your insurance agent.</p>
+        </hgroup>
+        
+        <hgroup>
+            <h1>What should I do in cases of a crash?</h1>
+            <p>In the event of a crash, here's what you should do:</p>
+            <ul>
+                <li><b>Ensure Safety:</b> Check if anyone is injured and, if necessary, call emergency services immediately. Prioritize safety by moving to a safe location if possible, without leaving the scene of the accident.</li>
+                
+                <li><b>Stay Calm:</b> Remain calm and avoid admitting fault or making any statements about who caused the accident.</li>
+                
+                <li><b>Exchange Information:</b> Exchange contact, insurance, and vehicle information with the other parties involved. Be sure to get:
+                    
+                    <ul>
+                        <li>Names, addresses, and phone numbers.</li>
+                        <li>Insurance company names and policy numbers.</li>
+                        <li>Driver's license and vehicle registration details.</li>
+                        <li>Document the Scene: If it's safe to do so, take photos or videos of the scene, including vehicle damage, license plates, and road conditions. Gather details of any witnesses, if possible.</li>
+                    </ul>
+                </li>
+                
+                <li><b>File a Police Report:</b> In many cases, it's important to notify the police, especially if there are injuries or significant damage. Obtain a copy of the police report for your records.</li>
+                
+                <li><b>Notify Your Insurance Company:</b> Contact us as soon as possible to report the incident. Provide the necessary information, including the date, time, and details of the crash. We will guide you through the claims process and help arrange any necessary repairs or coverage.</li>
+            </ul>
+            
+            <p>By following these steps, you'll help ensure your safety and the smooth handling of your insurance claim.</p>
+        </hgroup>
+        
+    </body>
+</html>
