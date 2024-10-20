@@ -17,6 +17,10 @@ p {
   margin-block-end: 1em;
 }
 
+a {
+    color: white;
+}
+
 h2 {
 
   font-size: 30px;
@@ -34,6 +38,7 @@ h4 {
   margin-top: 1px;
   padding-bottom: 8px;
 }
+
 
 
 /* Header */
@@ -181,8 +186,6 @@ h4 {
 .grid-container > a:hover {
   opacity: 1;
   filter: grayscale(0%);
-  padding: 35px 37px;
-  border: 0px;
 }
 
 /* Home Page Class */

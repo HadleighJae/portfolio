@@ -82,3 +82,10 @@ Getting stage directions from Act 3:
 //body/div[3]//stage
 ```
 <sub>Gotta go deeper, so you use two slashes instead of one for `//stage`</sub>
+
+## Mafalda.xml
+
+Get Panels (cbml:panel) that contain Mafalda (@who="#mafalda") Balloons (cbml:balloon)
+```
+//cbml:panel[cbml:balloon[@who="#mafalda"]]
+```
