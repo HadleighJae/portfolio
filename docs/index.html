@@ -3,9 +3,30 @@
   <head>
     <link rel="stylesheet" type="text/css" href="verycoolstyle.css" />
     <title>Home</title>
+    <script>
+            // Function to toggle the responsive class
+            function toggleMenu() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            
+            // Function to reset menu when the screen is resized
+            window.onresize = function () {
+                var x = document.getElementById("myTopnav");
+                if (window.innerWidth > 600) {
+                    x.className = "topnav";
+                    // Reset to normal menu when screen is big
+                }
+            };</script>
   </head>
   <body>
-    <div class="topnav">
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
       <a href="aboutwebsite.html">About</a>
       <a href="resumewebsite.html">Resume</a>
       <a href="gallerywebsite.html">Gallery</a>
@@ -17,7 +38,6 @@
           <a href="gameanalysiswebsite.html">Game Analysis</a>
         </div>
       </div>
-      <a href="index.html" style="float:right">Home</a>
     </div>
     <div class="separator-nav"></div>
     <div class="body-row">
