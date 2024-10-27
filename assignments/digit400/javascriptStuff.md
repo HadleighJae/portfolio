@@ -68,3 +68,17 @@ function changeColor2() {
 }
 ```
 Changes the color of all paragraph elements
+
+
+`pars` gets all the paragraphs through `var pars = document.getElementsByTagName('p')`
+
+`pars.length` takes the pars variable and gets the number of paragraphs
+
+
+
+# Query Selector
+
+```javascript
+var buttons = document.querySelectorAll('.button')
+```
+querySelectorAll grabs all the button classes in CSS
